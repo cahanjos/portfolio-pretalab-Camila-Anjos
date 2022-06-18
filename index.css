@@ -1,131 +1,173 @@
-/* Eu sou um comentário*/
+/* primeiras propriedades: */
 
 *{
-    margin: 0;
-    padding: 0;
-    outline: 0;
+    /* define a área de margem nos quatro lados do elemento */
+   margin: 0;
+   /* distância entre o conteúdo de um elemento e suas bordas */
+   padding: 0;
+   /* para configurar uma ou mais das propriedades de contorno */
+   outline: 0;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+   /* Definindo a fonte de todo nosso body */
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
 }
 
 li{
-    list-style: none;
+   /* retirando as bolinhas das nossas listas */
+   list-style: none;
 }
 
 .header-menu{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    padding: 8px;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    height: 60px;
-    background-color: #724796;
+    /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+   display: flex;
+   position: fixed; /*Deixa o nosso header fixo*/
+   width: 100%; /*Largura*/
+   padding-bottom: 32px; /*Espaçamento inferior*/
+   padding: 8px;  /*Espaçamento dos 4 lados*/
+   padding-top: 32px; /*Espaçamento superior*/
+   height: 60px;
+   background-color: #724796;
 }
 .header-menu nav{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
 }
 
 .lista-menu{
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    align-items: center;
+   display: flex;
+   justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
+   width: 50%;
+   align-items: center;
 }
-
+/*Pegando os itens com tag de dentro da nossa lista*/
 .lista-menu li>a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: inherit;
+   color: #fff;
+   font-size: 18px;
+   text-decoration: inherit;
 }
 .principal{
-    height: 100vh;
-    display: flex;
-    background-color: #eaeaee;
+   height: 100vh;
+   display: flex;
+   background-color: #eaeaee;
 }
 .container{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 960px;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 100%;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 960px; /*largura máxima*/
+   padding-right: 10px;  /*espaçamento direito*/
+   padding-left: 10px;  /*espaçamento esquerdo*/
+   width: 100%; /*ocupar a página inteira*/
 }
 
 .subcontainer-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+   display: flex;
+   flex-direction: column; /*imagem e texto, um embaixo do outro*/
+   justify-content: center;
+   align-items: center; /*todos os itens centralizados*/
+   text-align: center; /*todo o texto vai ficar centralizado*/
 }
 .nome-completo {
 font-size: 36px;
 color: #ff4dbc;
-font-weight: 700;
+font-weight: 700; /*espessura*/
 height: 45px;
 }
 
 .profissao {
-    font-size: 20px;
-    line-height: 32px;
-    color: #C6B5D5;
+   font-size: 20px;
+   line-height: 32px;
+   color: #C6B5D5;
 }
 
 .article-lista {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+   margin-bottom: 100px;
 }
 
 .topico-principal{
-    font-size: 36px;
-    color: #ff4dbc;
+   font-size: 36px;
+   color: #ff4dbc;
 }
 
 .lista-item{
-    padding: 32px;
+   padding: 32px;
 }
 
 .lista-item ul li {
-    margin-bottom: 32px;
+   margin-bottom: 32px;
 }
 
 .lista-titulo {
-    margin-bottom: 5px;
-    font-size: 22px;
-    color: #661e4b;
-    font-weight: 700;
+   margin-bottom: 5px;
+   font-size: 22px;
+   color: #661e4b;
+   font-weight: 700;
 }
 
 .lista-local {
-    font-size: 18px;
-    color: #2F80ED;
+   font-size: 18px;
+   color: #2F80ED;
 }
 
 .lista-descricao {
-    font-size: 18px;
-    margin-top: 5px;
-    line-height: 20px;
-    color: #828282;
-    font-weight: 300;
+   font-size: 18px;
+   margin-top: 5px;
+   line-height: 20px;
+   color: #828282;
+   font-weight: 300;
 }
 
 .wrapper-portfolio{
-    background-color: #eaeaee;
-    display: flex;
-    flex-direction: column;
+   background-color: #eaeaee;
+   display: flex;
+   flex-direction: column;
 }
 
 .subtitulo-lista {
 font-size: 18px;
 color: #828282;
 font-weight: 500;
+}
+
+.rodape-estilo {
+   display: flex;
+   position: absolute;
+   width: 100%;
+   padding: 8px;
+   padding-bottom: 150px;
+   padding-top: 32px;
+   height: 20px;
+   background-color: #724796;
+}
+
+.rodape-estilo div{
+   display: flex;
+   justify-content: flex-start;
+   width: 100%;
+}
+
+.lista-icones {
+   color: #fff;
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   align-items: flex-start ;
+   padding: 170px;  /*Espaçamento dos 4 lados*/
+   padding-top: 70px; /*Espaçamento superior*/
+   justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
+}
+.lista-icones li>i {
+   font-size: 30px;
+   text-decoration: inherit;
+   padding left: 50px;
+   line-heigth: 50px;
+
 }
 
