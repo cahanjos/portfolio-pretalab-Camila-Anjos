@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" href="img/imagem12.gif"
-    <title>Meu Portfólio</title>
+    <link rel="icon" href="img/imagem12.gif">
+    <title>Camila Anjos</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
     <meta name="description" content="Portfólio">
@@ -16,8 +16,9 @@
 <body>
     <!-- Nosso cabeçalho -->
     <header class="header-menu">
-        <!-- Onde vão ficar os nossos links de acesso da pagina -->
+        <!-- O Nav é a barra de navegação onde vão ficar os nossos links de acesso da pagina -->
         <nav>
+        <!-- O Ul e o OL são as listas -->
             <ul class="lista-menu">
                 <li>
                     <a href="#formacao">Formação</a>
@@ -31,9 +32,12 @@
             </ul>
         </nav>
     </header>
-    <!-- Tag principal que fala o scopo principal do nosso site -->
+
+    <!-- O Main cria o "corpo" do site, escopo principal do nosso site -->
     <main>
+        <!-- O Section faz parte da semântica, de criar e separar as sessões do nosso site -->
         <section class="principal">
+            <!-- O article quer dizer que estamos criando um trecho do nosso site, que é independente de outros trechos/partes do nosso site -->
             <!-- A seção do meu site -->
             <article class="subcontainer-principal container">
                 <div>
@@ -46,15 +50,14 @@
                 <div>
                     <p>Olá! Meu nome é Camila, tenho 31 anos e estou passando, e amando, <br>
                         por uma transição profisisonal para a área de TI.<br>
-                        Aqui vocês encontrarão minhas formações, blog e contatos.<br>
+                        Aqui vocês encontrarão minhas formações, páginas de inspiração e contatos.<br>
                     </p>
                 </div>
             </article>
         </section>
 
-
         <section>
-            <article class="container article-lista">
+            <article id="formacao" class="container article-lista">
                 <div>
                     <h3 class="topico-principal">Formação</h3>
                 </div>
@@ -91,17 +94,14 @@
                                 maximizando benefícios da atividade econômica empresarial, dentro de perspectiva
                                 ética e sustentável dos negócios.</p>
 
-
-
                         </li>
                     </ul>
                 </div>
             </article>
         </section>
 
-
         <section class="wrapper-portfolio">
-            <article class="container article-lista">
+            <article id="portfolio" class="container article-lista">
                 <div>
                     <h3 class="topico-principal">Blog</h3>
                 </div>
@@ -111,30 +111,29 @@
                             <p class="lista-titulo">Mulheres que fazem história</p>
                             <p class="subtitulo-lista">Revelo</p>
                             <a href="https://community.revelo.io/27-desenvolvedoras-brasileiras-para-se-inspirar-em-2022/"
-                                target"_blank" class="" lista-local">27 desen</a>
-                            <p class="lista-descricao">descrição do artigo</p>
+                                target="_blank" class="lista-local">27 desenvolvedoras brasileiras para se inspirar em 2022</a>
+                            <p class="lista-descricao">Felizmente, mais e mais mulheres têm crescido profissionalmente no ecossistema de desenvolvimento de software do Brasil. Muitas delas merecem destaque, contudo, pelo trabalho que desenvolvem na formação de outras mulheres desenvolvedoras para fazer parte desse ecossistema que, como sabemos, (ainda) é eminentemente masculino.</p>
                         </li>
                         <li>
-                            <p class="lista-titulo">Mulheres que fazem história</p>
-                            <p class="subtitulo-lista">Revelo</p>
-                            <a href="https://community.revelo.io/27-desenvolvedoras-brasileiras-para-se-inspirar-em-2022/"
-                                target"_blank" class="" lista-local">27 desen</a>
-                            <p class="lista-descricao">OLÁ, AMIGOS</p>
+                            <p class="lista-titulo">Quem Coda BR</p>
+                            <p class="subtitulo-lista">Pretalab</p>
+                            <a href="https://www.pretalab.com/report-quem-coda" target="_blank" class="lista-local" >Quem coda br</a>
+                            <p class="lista-descricao">O futuro da tecnologia do Brasil em mãos de mulheres negras.</p>
                         </li>
                     </ul>
                 </div>
             </article>
         </section>
     </main>
-    <!-- Rodape -->
-    <footer class="rodape-estilo">
-        <div>
+
+    <!-- O Footer faz parte da semântica, de criar o rodapé do site -->
+    <footer class="rodape-estilo" id="contato">
+        <div class="container">
             <ul class="lista-icones">
                 <!-- Explicar sobre icones -->
-                <li><i class="fas fa-envelope-square estilo-icon" class="links"></i> <b> cahanjos@gmail.com</b></li>
-                <br />
-                <li><i class="fab fa-linkedin estilo-icon" class="links"></i> <b>camila-dos-anjos-616039218</b></li><br/>
-                <li><i class="fab fa-github-square estilo-icon" class="links"></i> <b> https://github.com/cahanjos </b></li><br />
+                <li><i class="fas fa-envelope-square estilo-icon"></i><a href="mailto:cahanjos@gmail.com" target="_blank"class="links">cahanjos@gmail.com</a></li>
+                <li><i class="fab fa-linkedin estilo-icon"></i><a href="https://www.linkedin.com/in/camila-dos-anjos-616039218/" target="_blank" class="links"> camila-dos-anjos</a></li>
+                <li><i class="fab fa-github-square estilo-icon"></i><a href="https://github.com/cahanjos" target="_blank" class="links">cahanjos</a></li>
             </ul>
         </div>
     </footer>

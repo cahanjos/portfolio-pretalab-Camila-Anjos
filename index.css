@@ -1,6 +1,6 @@
 /* primeiras propriedades: */
 
-*{
+*{ /*apply the styles inside the { } to everything. * means all. */
     /* define a área de margem nos quatro lados do elemento */
    margin: 0;
    /* distância entre o conteúdo de um elemento e suas bordas */
@@ -55,7 +55,7 @@ li{
    background-color: #eaeaee;
 }
 .container{
-   margin-right: auto;
+   margin-right: auto; /*uma margem automática para todos os lados*/
    margin-left: auto;
    max-width: 960px; /*largura máxima*/
    padding-right: 10px;  /*espaçamento direito*/
@@ -137,37 +137,27 @@ font-weight: 500;
 
 .rodape-estilo {
    display: flex;
-   position: absolute;
-   width: 100%;
-   padding: 8px;
-   padding-bottom: 150px;
-   padding-top: 32px;
-   height: 20px;
+   align-items: center;
+   height: 30vh;
    background-color: #724796;
 }
 
-.rodape-estilo div{
-   display: flex;
-   justify-content: flex-start;
-   width: 100%;
+.estilo-icon {
+   font-size: 32px;
+   margin-right: 10px;
 }
 
-.lista-icones {
+.links {
+   text-decoration: none;
+   color: white;
+}
+
+.lista-icones li {
    color: #fff;
-   font-size: 20px;
+   font-weight: 700;
+   font-size: 18px;
+   margin-bottom: 16px;
    display: flex;
-   flex-direction: column;
-   width: 30%;
-   align-items: flex-start ;
-   padding: 170px;  /*Espaçamento dos 4 lados*/
-   padding-top: 70px; /*Espaçamento superior*/
-   justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
-}
-.lista-icones li>i {
-   font-size: 30px;
-   text-decoration: inherit;
-   padding left: 50px;
-   line-heigth: 50px;
-
+   align-items: center;
 }
 
